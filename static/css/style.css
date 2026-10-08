@@ -1,0 +1,20 @@
+body{
+    background-color: darkgray;
+
+}
+p{
+    color: blueviolet;
+}
+h1{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+button{
+    padding: 1%;
+}
+form{
+    background-color: black;
+    color: aliceblue;
+}
+textarea{
+    width: 150%;
+}

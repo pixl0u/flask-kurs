@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="no">
+<head>
+<meta charset="UTF-8">
+<title>Min Flask-side</title>
+<link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+
+<body>
+
+<h1>Velkommen {{navn}}!</h1>
+<p>alder: {{alder}}</p>
+<p>favorittspråk: {{favorittspråk}}</p>
+<p>skole: {{skole}}</p>
+
+{% if poeng >= 50 %}
+<p>Du har bestått.</p>
+{% else %}
+<p>ikke bestått.</p>
+{% endif %}
+
+<a href="om">om</a>
+<br>
+<a href="spill">spill</a>
+<br>
+<a href="registrering">registrering</a>
+<br>
+<a href="kurs">kurs</a>
+url_for('om')
+
+</body>
+
+</html>
