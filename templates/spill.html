@@ -1,15 +1,6 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>spill</title>
-    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
-</head>
-<body>
-    <h1>spill siden</h1>
-    <ol >{% for element in spill %}<li>{{element}}</li>{%endfor%}</ol>
-
-    <a href="/">hjem</a>
-</body>
-</html>
+{% extends "base.html" %}
+{% block title %}Forside{% endblock %}
+{% block content %}
+<h1>spill siden</h1>
+<ol >{% for element in spill %}<li>{{element}}</li>{%endfor%}</ol>
+{% endblock %}

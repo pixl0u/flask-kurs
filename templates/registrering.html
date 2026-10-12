@@ -1,13 +1,9 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>registrering</title>
-    
-</head>
-<body>
-    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+
+{% extends "base.html" %}
+{% block title %}Forside{% endblock %}
+{% block content %}
+
+<link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
 <form method="POST">
     <label for="navn">Navn:</label>
     <input type="text" id="navn" name="navn">
@@ -25,10 +21,4 @@
     <input type="text" id="kommentar" name="kommentar">
     <button type="submit">Send</button>
 </form>
-
-
-
-<a href="/">hjem</a>
-
-</body>
-</html>
+{% endblock %}

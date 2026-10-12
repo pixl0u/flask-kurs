@@ -1,13 +1,7 @@
-<!DOCTYPE html>
-<html lang="no">
-<head>
-<meta charset="UTF-8">
-<title>om</title>
-<link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
-</head>
 
-<body>
-
+{% extends "base.html" %}
+{% block title %}Forside{% endblock %}
+{% block content %}
 <h1>om oss</h1>
 <p>Deooiewjfiwjfoijew.</p>
 <p>ksmfoiaoi</p>
@@ -28,12 +22,4 @@
 
 </form>
     
-
-
-
-
-<a href="/">hjem</a>
-
-</body>
-
-</html>
+{% endblock %}
